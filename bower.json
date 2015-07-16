@@ -1,0 +1,25 @@
+{
+  "name": "backbone.flow",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/scripts/app.min.js",
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "underscore": "~1.7.0",
+    "backbone": "~1.1.2"
+  },
+  "devDependencies": {
+    "jasmine": "~2.3.4"
+  },
+  "ignore": [
+    "**/.*",
+    "**/*.md",
+    "Gruntfile.js",
+    "coffeelint.json",
+    "bin",
+    "spec",
+    "test",
+    "node_modules",
+    "bower_components"
+  ]
+}
