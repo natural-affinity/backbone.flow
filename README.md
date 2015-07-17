@@ -154,7 +154,7 @@ App.Views.Second = Backbone.View.extend({
 });
 
 // define flow view
-Acid.Views.DemoFlow = Backbone.Container.Flow.extend({
+App.Views.DemoFlow = Backbone.Container.Flow.extend({
   initialize: function (options) {
     options = options || {};
     this.vent = options.vent;
@@ -188,12 +188,12 @@ Acid.Views.DemoFlow = Backbone.Container.Flow.extend({
 var vent = _.extend({}, Backbone.Events);
 
 // instantiate model and child views
-var model = new Acid.Models.SharedModel();
-var first = new Acid.Views.First({model: model, hook: $('#main')});
-var second = new Acid.Views.Second({model: model, hook: $('#main')})
+var model = new App.Models.SharedModel();
+var first = new App.Views.First({model: model, hook: $('#main')});
+var second = new App.Views.Second({model: model, hook: $('#main')})
 
 // instantiate flow, inject child views and vent, and render the flow
-var flow = new Acid.Views.DemoFlow({views: [first, second], vent: vent});
+var flow = new App.Views.DemoFlow({views: [first, second], vent: vent});
 flow.render();
 
 ```
